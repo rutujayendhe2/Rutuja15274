@@ -38,7 +38,7 @@ public class CakeApp {
 		//Find Product
 
 		int id = 0;
-		Product product3=productI.findById(id);
+		Product product3=productI.findById(102);
 		System.out.println("Product Found"+product3);
 		
 		
