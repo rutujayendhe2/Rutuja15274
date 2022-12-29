@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.training.customer.dao.CustomerDaoTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 1.794 s - in com.training.customer.dao.CustomerDaoTest

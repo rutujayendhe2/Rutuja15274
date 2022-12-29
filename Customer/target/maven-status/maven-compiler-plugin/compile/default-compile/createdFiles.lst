@@ -1,0 +1,4 @@
+com\training\customer\util\HibernateUtil.class
+com\training\customer\model\Customer.class
+com\training\customer\dao\IDao.class
+com\training\customer\dao\CustomerDao.class
