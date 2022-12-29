@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.training.product.dao.ProductDaoTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 1.743 s - in com.training.product.dao.ProductDaoTest

@@ -1,0 +1,4 @@
+com\training\product\dao\IDao.class
+com\training\product\model\Product.class
+com\training\product\util\HibernateUtil.class
+com\training\product\dao\ProductDao.class
