@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.training.cakeapp.dao.CustomerDaoTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 2.581 s - in com.training.cakeapp.dao.CustomerDaoTest

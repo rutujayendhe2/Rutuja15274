@@ -1,0 +1,8 @@
+com\training\cakeapp\dao\ProductDao.class
+com\training\cakeapp\dao\CustomerDao.class
+com\training\cakeapp\util\HibernateUtil.class
+com\training\cakeapp\dao\OrderItemDao.class
+com\training\cakeapp\model\OrderItem.class
+com\training\cakeapp\model\Product.class
+com\training\cakeapp\dao\IDao.class
+com\training\cakeapp\model\Customer.class
