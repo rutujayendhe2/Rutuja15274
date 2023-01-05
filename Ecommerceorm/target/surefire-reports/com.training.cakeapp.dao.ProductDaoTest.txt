@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.training.cakeapp.dao.ProductDaoTest
--------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 1, Skipped: 4, Time elapsed: 0 s <<< FAILURE! - in com.training.cakeapp.dao.ProductDaoTest
-testCreate  Time elapsed: 0 s  <<< ERROR!
-org.hibernate.internal.util.config.ConfigurationException: Could not locate cfg.xml resource [hibernate.cfg.xml]
-	at com.training.cakeapp.dao.ProductDaoTest.testCreate(ProductDaoTest.java:24)
-
