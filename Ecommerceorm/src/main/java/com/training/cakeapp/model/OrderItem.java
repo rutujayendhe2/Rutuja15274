@@ -7,14 +7,18 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
+
+
 
 @Entity
 public class OrderItem {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int itemId;
-
+	@ManyToOne
+	private Orders orders;
 	@OneToOne(cascade = CascadeType.ALL)
 	private Product product;
 	private int quantity;
@@ -23,15 +27,17 @@ public class OrderItem {
 		super();
 	}
 
-	public OrderItem(Product product, int quantity) {
+	public OrderItem(Orders orders, Product product, int quantity) {
 		super();
+		this.orders = orders;
 		this.product = product;
 		this.quantity = quantity;
 	}
 
-	public OrderItem(int itemId, Product product, int quantity) {
+	public OrderItem(int itemId, Orders orders, Product product, int quantity) {
 		super();
 		this.itemId = itemId;
+		this.orders = orders;
 		this.product = product;
 		this.quantity = quantity;
 	}
@@ -42,6 +48,14 @@ public class OrderItem {
 
 	public void setItemId(int itemId) {
 		this.itemId = itemId;
+	}
+
+	public Orders getOrders() {
+		return orders;
+	}
+
+	public void setOrders(Orders orders) {
+		this.orders = orders;
 	}
 
 	public Product getProduct() {
@@ -62,12 +76,13 @@ public class OrderItem {
 
 	@Override
 	public String toString() {
-		return "OrderItem [itemId=" + itemId + ", product=" + product + ", quantity=" + quantity + "]";
+		return "OrderItem [itemId=" + itemId + ", orders=" + orders + ", product=" + product + ", quantity=" + quantity
+				+ "]";
 	}
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(itemId);
+		return Objects.hash(itemId, orders, product, quantity);
 	}
 
 	@Override
@@ -79,7 +94,9 @@ public class OrderItem {
 		if (getClass() != obj.getClass())
 			return false;
 		OrderItem other = (OrderItem) obj;
-		return itemId == other.itemId;
+		return itemId == other.itemId && Objects.equals(orders, other.orders) && Objects.equals(product, other.product)
+				&& quantity == other.quantity;
 	}
 
+	
 }

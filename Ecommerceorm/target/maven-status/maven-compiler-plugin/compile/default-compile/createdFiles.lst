@@ -4,5 +4,7 @@ com\training\cakeapp\util\HibernateUtil.class
 com\training\cakeapp\dao\OrderItemDao.class
 com\training\cakeapp\model\OrderItem.class
 com\training\cakeapp\model\Product.class
+com\training\cakeapp\dao\OrdersDao.class
+com\training\cakeapp\model\Orders.class
 com\training\cakeapp\dao\IDao.class
 com\training\cakeapp\model\Customer.class

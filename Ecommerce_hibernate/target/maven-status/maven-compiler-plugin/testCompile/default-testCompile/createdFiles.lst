@@ -1,0 +1,4 @@
+com\training\cakeapp\test\OrderItemDaoTest.class
+com\training\cakeapp\test\ProductDaoTest.class
+com\training\cakeapp\test\CustomerDaoTest.class
+com\training\cakeapp\test\OrderDaoTest.class

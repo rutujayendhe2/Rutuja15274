@@ -4,7 +4,7 @@
 	<artifactId>Ecommerceorm</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
-	<properties>
+	 <properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
@@ -19,7 +19,6 @@
 			<artifactId>hibernate-core</artifactId>
 			<version>${hibernate.version}</version>
 		</dependency>
-
 
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
@@ -97,5 +96,5 @@
 
 		</pluginManagement>
 	</build>
-
+	
 </project>
